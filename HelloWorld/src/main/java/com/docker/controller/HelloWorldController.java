@@ -13,9 +13,9 @@ public class HelloWorldController {
 		return "hello, my name is rakesh";
 	}
 	
-	@GetMapping("/say/{name}")
-	public String sayName(@PathVariable String name) {
-		return name;
+	@GetMapping("/")
+	public String home() {
+		return "Hello from the CI/CD pipeline!";
 	}
 	
 }
